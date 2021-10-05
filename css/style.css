@@ -1,0 +1,98 @@
+*,
+*::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  max-width: 85%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.row .left {
+  width: 50%;
+}
+.row .left h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  width: 500px;
+  margin-bottom: 30px;
+}
+.row .right .phone {
+  position: relative;
+  height: 500px;
+  width: 250px;
+  border-radius: 40px;
+  overflow: hidden;
+  z-index: -2;
+}
+.row .right .phone .bg {
+  background: url("../Images/iPhone.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 500px;
+  width: 250px;
+  border-radius: 40px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+}
+.row .right .phone .scan {
+  position: absolute;
+  top: 0;
+  left: 12%;
+  right: 12%;
+  bottom: 0;
+}
+.row .right .phone .result {
+  position: absolute;
+  width: 215px;
+  z-index: 4;
+  left: 7%;
+  right: 5%;
+  top: 49%;
+}
+.row .right .phone .overlay {
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.38);
+  height: 500px;
+  width: 250px;
+  border-radius: 40px;
+}
+
+.btn {
+  text-decoration: none;
+  color: #fff;
+  background: #3300FF;
+  padding: 0.7em 3em;
+  font-family: "Lato", sans-serif;
+  border-radius: 5px;
+}
+
+@media (max-width: 320px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
